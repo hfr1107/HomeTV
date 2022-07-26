@@ -537,9 +537,8 @@
                 android:layout_marginBottom="@dimen/vs_10"
                 android:focusable="false"
                 android:orientation="horizontal">
-
                 <LinearLayout
-                    android:id="@+id/llBackup"
+                    android:id="@+id/llWp0"
                     android:layout_width="@dimen/vs_0"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="@dimen/vs_5"
@@ -555,7 +554,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="数据备份还原"
+                        android:text="系统壁纸"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/ts_24" />
 
@@ -617,8 +616,9 @@
                 android:focusable="false"
                 android:orientation="horizontal">
 
+
                 <LinearLayout
-                    android:id="@+id/llWp0"
+                    android:id="@+id/llBackup"
                     android:layout_width="@dimen/vs_0"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="@dimen/vs_5"
@@ -634,7 +634,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="系统壁纸"
+                        android:text="数据备份还原"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/ts_24" />
 
