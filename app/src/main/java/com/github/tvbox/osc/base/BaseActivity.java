@@ -187,6 +187,8 @@ public abstract class BaseActivity extends AppCompatActivity implements CustomAd
                 BitmapFactory.Options opts = new BitmapFactory.Options();
                 opts.inJustDecodeBounds = true;
                 BitmapFactory.decodeFile(wp.getAbsolutePath(), opts);
+                            } else {
+                globalWp = null;
                 // 从Options中获取图片的分辨率
                 int imageHeight = opts.outHeight;
                 int imageWidth = opts.outWidth;
