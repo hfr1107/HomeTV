@@ -187,8 +187,6 @@ public abstract class BaseActivity extends AppCompatActivity implements CustomAd
                 BitmapFactory.Options opts = new BitmapFactory.Options();
                 opts.inJustDecodeBounds = true;
                 BitmapFactory.decodeFile(wp.getAbsolutePath(), opts);
-                            } else {
-                globalWp = null;
                 // 从Options中获取图片的分辨率
                 int imageHeight = opts.outHeight;
                 int imageWidth = opts.outWidth;
@@ -207,6 +205,8 @@ public abstract class BaseActivity extends AppCompatActivity implements CustomAd
                 // 采样率
                 opts.inSampleSize = scale;
                 globalWp = new BitmapDrawable(BitmapFactory.decodeFile(wp.getAbsolutePath(), opts));
+                 } else {
+                globalWp = null;
             }
         } catch (Throwable throwable) {
             throwable.printStackTrace();
