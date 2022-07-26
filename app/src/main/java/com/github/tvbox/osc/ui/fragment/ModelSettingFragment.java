@@ -144,7 +144,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
             public void onClick(View v) {
                 FastClickCheckUtil.check(v);
                             ((BaseActivity) requireActivity()).changeWallpaper(true);
-                             getWindow().setBackgroundDrawableResource(R.drawable.app_bg);
+                            ((BaseActivity) getWindow()).setBackgroundDrawableResource(R.drawable.app_bg);
                         }
         });
         findViewById(R.id.llWp).setOnClickListener(new View.OnClickListener() {
