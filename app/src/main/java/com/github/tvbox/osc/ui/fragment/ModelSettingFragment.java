@@ -143,9 +143,11 @@ public class ModelSettingFragment extends BaseLazyFragment {
             @Override
             public void onClick(View v) {
                 FastClickCheckUtil.check(v);
-                            ((BaseActivity) requireActivity()).changeWallpaper(true);
-                            ((BaseActivity) getWindow()).setBackgroundDrawableResource(R.drawable.app_bg);
-                        }
+                File wp = new File(requireActivity().getFilesDir().getAbsolutePath() + "/wp");
+                if (wp.exists())
+                    wp.delete();
+                ((BaseActivity) requireActivity()).changeWallpaper(true);
+            }
         });
         findViewById(R.id.llWp).setOnClickListener(new View.OnClickListener() {
             @Override
